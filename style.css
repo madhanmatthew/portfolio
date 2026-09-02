@@ -675,9 +675,9 @@ em {
 
 .fade-line-text {
   display: inline-block;
-  font-size: 0.93rem;
-  font-weight: 500;
-  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
   white-space: nowrap;
   animation: fadeWipeLeftToRight 6.5s ease-in-out 0.8s infinite both;
 }
@@ -854,9 +854,18 @@ em {
   margin-bottom: 14px;
 }
 
+.intro-wrap .section-tag {
+  font-size: clamp(1.6rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
 .skill-row {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 175px 1fr;
   gap: 16px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
