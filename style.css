@@ -478,10 +478,23 @@ em {
   font-weight: 400;
   color: var(--muted);
   max-width: 52ch;
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: 36px;
   padding-left: 16px;
   border-left: 3px solid var(--purple);
+}
+
+.hero-bio-highlight {
+  font-weight: 600;
+  color: var(--purple);
+  letter-spacing: 0.03em;
+}
+
+.hero-bio-tagline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 .hero-actions {
