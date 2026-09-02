@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhan Matthew S</title>
+  <meta name="description"
+    content="Madhan Matthew S — AI & ML Engineer building intelligent systems at CMRIT, Bengaluru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ════════════════════════════════════════════
+       SIDEBAR
+  ════════════════════════════════════════════ -->
+  <aside id="sidebar">
+    <div class="sidebar-top">
+      <a href="#intro" class="sb-logo">MMS<span>·</span></a>
+      <div class="sb-identity">
+        <h4 class="sb-name">Madhan Matthew S</h4>
+        <h2 class="sb-title">AI &amp; ML Engineer</h2>
+        <h4 class="sb-institute">CMRIT · Bengaluru · 2027</h4>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Sections">
+      <a href="#intro" class="nav-item active">Introduction</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#education" class="nav-item">Education</a>
+      <a href="#certifications" class="nav-item">Certifications</a>
+      <a href="#activities" class="nav-item">Activities</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="sb-links">
+        <a href="https://github.com/madhanmatthew" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/madhan-matthew-s-88a73b375/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leetcode.com/u/Madhan_Matthew_S/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="mailto:madhan4530@gmail.com">Email</a>
+      </div>
+      <a href="6th sem.pdf" target="_blank" rel="noopener" class="sb-resume">Resume ↗</a>
+    </div>
+  </aside>
+
+  <!-- Mobile top bar -->
+  <div id="topbar">
+    <a href="#intro" class="tb-logo">MMS<span>·</span></a>
+    <button id="menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div id="drawer" aria-hidden="true">
+    <button id="drawer-close" aria-label="Close menu">✕</button>
+    <nav>
+      <a href="#intro" class="dr-item">Introduction</a>
+      <a href="#about" class="dr-item">About</a>
+      <a href="#projects" class="dr-item">Projects</a>
+      <a href="#education" class="dr-item">Education</a>
+      <a href="#certifications" class="dr-item">Certifications</a>
+      <a href="#activities" class="dr-item">Activities</a>
+      <a href="#contact" class="dr-item">Contact</a>
+    </nav>
+    <div class="dr-links">
+      <a href="https://github.com/madhanmatthew" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/madhan-matthew-s-88a73b375/" target="_blank">LinkedIn</a>
+      <a href="6th sem.pdf" target="_blank">Resume ↗</a>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MAIN SCROLLABLE CONTENT
+  ════════════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- INTRO -->
+    <section id="intro" class="section">
+      <div class="intro-wrap">
+        <span class="section-tag">Hello, I'm</span>
+        <h1 class="hero-name">Madhan<br /><em>Matthew S</em></h1>
+        <p class="hero-role">AI/ML ENGINEER &nbsp;&middot;&nbsp; DATA ANALYTICS</p>
+        <p class="hero-bio">
+          I engineer intelligent software for problems that don’t have simple answers —
+          combining GenAI, machine learning, and data analytics to turn complex data into
+          systems that work in the real world.
+        </p>
+        <div class="hero-actions">
+          <a href="6th sem.pdf" target="_blank" rel="noopener" class="btn-primary">View Resume ↗</a>
+          <a href="#projects" class="btn-ghost">See My Work</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hm-item"><span class="hm-val">8.53</span><span class="hm-label">CGPA</span></div>
+          <div class="hm-sep"></div>
+          <div class="hm-item"><span class="hm-val">8+</span><span class="hm-label">Projects</span></div>
+          <div class="hm-sep"></div>
+          <div class="hm-item"><span class="hm-val">5+</span><span class="hm-label">Hackathons</span></div>
+          <div class="hm-sep"></div>
+          <div class="hm-item"><span class="hm-val">2027</span><span class="hm-label">Graduating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="about-wrap">
+        <div class="about-text">
+          <span class="section-tag">About</span>
+          <h2 class="section-heading">The person<br /><em>behind the work</em></h2>
+          <p class="body-text">
+            I'm an AI &amp; ML undergraduate at CMRIT Bengaluru with hands-on experience
+            building production-grade AI systems, full-stack applications, and data
+            analytics platforms.
+          </p>
+          <p class="body-text">
+            My work sits at the intersection of machine learning and clean engineering —
+            making intelligent systems that are reliable, explainable, and genuinely useful.
+          </p>
+          <p class="body-text">
+            I speak <strong>English, Kannada, Hindi, Tamil,</strong> and <strong>Telugu</strong>, and
+            outside of code I sketch portraits, edit videos, and play cricket and badminton.
+          </p>
+
+          <div class="skills-block">
+            <p class="skills-label">Technical Skills</p>
+            <div class="skill-row"><span class="sk-cat">Languages</span><span class="sk-vals">Python · C ·
+                JavaScript</span></div>
+            <div class="skill-row"><span class="sk-cat">Web &amp; Backend</span><span class="sk-vals">React · Node.js ·
+                Express.js · Flask · HTML/CSS</span></div>
+            <div class="skill-row"><span class="sk-cat">Databases</span><span class="sk-vals">MySQL · PostgreSQL</span>
+            </div>
+            <div class="skill-row"><span class="sk-cat">AI / ML</span><span class="sk-vals">NLP · spaCy · Transformers ·
+                LLaMA · sentence-transformers</span></div>
+            <div class="skill-row"><span class="sk-cat">Data</span><span class="sk-vals">Tableau · Power BI · Pandas ·
+                Excel</span></div>
+            <div class="skill-row"><span class="sk-cat">Tools</span><span class="sk-vals">Git · GitHub · Figma · Render
+                · Netlify</span></div>
+          </div>
+        </div>
+        <div class="about-photo-side">
+          <img src="image.png" alt="Madhan Matthew S" class="profile-photo" />
+          <div class="photo-caption">Bengaluru, India</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <span class="section-tag">Work</span>
+        <h2 class="section-heading">Projects</h2>
+        <p class="section-sub">Built to solve real problems.</p>
+
+        <!-- FEATURED PROJECTS (Detailed Cards) -->
+        <div class="projects-list">
+
+          <!-- 01: AI Emergency Response -->
+          <div class="project-entry">
+            <div class="pe-left">
+              <span class="pe-num">01</span>
+            </div>
+            <div class="pe-body">
+              <div class="pe-header">
+                <h3>AI Emergency Response &amp; Smart Traffic Clearance System</h3>
+                <a href="https://github.com/madhanmatthew/Major-Project" target="_blank" rel="noopener"
+                  class="pe-link">GitHub ↗</a>
+              </div>
+              <p class="pe-desc">
+                A simulation-driven emergency coordination platform for Bengaluru. Five coordinated AI agents — severity
+                classification (TF-IDF + Logistic Regression), ETA prediction (Gradient Boosting), hospital
+                optimization, traffic control, and police deployment — run through a multi-agent coordinator to automate
+                the full dispatch workflow. Live Bengaluru map visualization and WebSocket-based real-time updates.
+              </p>
+              <div class="pe-tags">
+                <span>Python</span><span>FastAPI</span><span>scikit-learn</span>
+                <span>Gradient Boosting</span><span>Logistic Regression</span>
+                <span>WebSockets</span><span>Leaflet.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02: AI Inconsistency Detector -->
+          <div class="project-entry">
+            <div class="pe-left">
+              <span class="pe-num">02</span>
+            </div>
+            <div class="pe-body">
+              <div class="pe-header">
+                <h3>AI Inconsistency Detector</h3>
+                <a href="https://github.com/madhanmatthew/Inconsistency_Detector" target="_blank" rel="noopener"
+                  class="pe-link">GitHub ↗</a>
+              </div>
+              <p class="pe-desc">
+                A Gen-AI forensic tool that cross-examines witness statements, FIRs, and CCTV summaries to auto-detect
+                contradictions in timelines, suspect appearance, and vehicle details. Dual-mode output with similarity
+                scores, Flask REST backend, and one-click ReportLab PDF export. Hybrid NLP pipeline: LLM reasoning +
+                semantic similarity + entity extraction + regex pattern matching.
+              </p>
+              <div class="pe-tags">
+                <span>Python</span><span>Flask</span><span>GroqAPI (LLaMA4)</span>
+                <span>spaCy</span><span>NLP</span><span>ReportLab</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03: GoalPulse -->
+          <div class="project-entry">
+            <div class="pe-left">
+              <span class="pe-num">03</span>
+            </div>
+            <div class="pe-body">
+              <div class="pe-header">
+                <h3>GoalPulse</h3>
+                <a href="https://github.com/madhanmatthew/MEMbrain-Hackathon" target="_blank" rel="noopener"
+                  class="pe-link">GitHub ↗</a>
+              </div>
+              <p class="pe-desc">
+                Full-stack React app integrating the MEMbrain semantic memory API to store, retrieve, and semantically
+                search user goals in real time. Signature feature: a D3.js force-directed "Goal Constellation" graph
+                visualising goal–event relationships with physics simulation, zoom/pan, drag, and animated glow effects.
+                Global state via React Context + custom hooks across 6+ components.
+              </p>
+              <div class="pe-tags">
+                <span>React 19</span><span>D3.js</span><span>Framer Motion</span>
+                <span>MEMbrain API</span><span>Vite</span><span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04: CT-200 Manual QA System -->
+          <div class="project-entry">
+            <div class="pe-left">
+              <span class="pe-num">04</span>
+            </div>
+            <div class="pe-body">
+              <div class="pe-header">
+                <h3>CT-200 Manual QA System</h3>
+                <a href="https://github.com/madhanmatthew/AffineSurge-Project" target="_blank" rel="noopener"
+                  class="pe-link">GitHub ↗</a>
+              </div>
+              <p class="pe-desc">
+                A backend that parses a technical PDF manual into a versioned, browsable hierarchy tree, lets a user
+                select sections and generate LLM-based QA test-case ideas from them, and flags when a previously
+                generated test case may be stale relative to a newer document version. PDF parsing combines
+                span/font-level extraction with table extraction. Runs fully offline with a deterministic mock LLM
+                provider when no API key is set, or connects to Groq's LLaMA 3.1 for real generation. Backed by a
+                16-test pytest suite covering parser edge cases, version matching, and full API flow.
+              </p>
+              <div class="pe-tags">
+                <span>FastAPI</span><span>Pydantic</span><span>SQLAlchemy</span>
+                <span>SQLite</span><span>PyMuPDF</span><span>pdfplumber</span>
+                <span>Groq (LLaMA 3.1)</span><span>pytest</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECONDARY PROJECTS (Compact Section) -->
+        <div class="secondary-projects-block">
+          <div class="sec-header-wrap">
+            <span class="section-tag">More Build Experience</span>
+            <h3 class="sec-heading">Secondary Projects</h3>
+          </div>
+
+          <div class="sec-projects-grid">
+
+            <!-- Sec 1: HackHammer -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4>HackHammer (LearnOS)</h4>
+                <a href="https://github.com/madhanmatthew/HackHammer" target="_blank" rel="noopener"
+                  class="sec-link">GitHub ↗</a>
+              </div>
+              <p class="sec-desc">
+                AI-powered app that turns any topic into a structured 5-minute lesson plan with key concepts, analogies,
+                and interactive quizzes.
+              </p>
+              <div class="sec-tags">
+                <span>React/JS</span><span>Google Gemini AI</span><span>Node.js</span>
+              </div>
+            </div>
+
+            <!-- Sec 2: InnovateX Hackfest -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4>InnovateX Hackfest — Recruitment Simulation System</h4>
+                <a href="https://github.com/madhanmatthew/AgentX_Hackathon_2026" target="_blank" rel="noopener"
+                  class="sec-link">GitHub ↗</a>
+              </div>
+              <p class="sec-desc">
+                AI-powered recruitment platform: recruiters build custom assessment scenarios (MCQ/text/coding), Gemini
+                AI evaluates responses, applicants get instant feedback and performance tracking.
+              </p>
+              <div class="sec-tags">
+                <span>Node.js</span><span>Express</span><span>SQLite</span><span>JWT</span><span>Google Gemini AI</span>
+              </div>
+            </div>
+
+            <!-- Sec 3: Sales Trend Analyzer -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4>Sales Trend Analyzer — NLP</h4>
+                <a href="https://github.com/madhanmatthew/Sales_trend_analysis_NLP" target="_blank" rel="noopener"
+                  class="sec-link">GitHub ↗</a>
+              </div>
+              <p class="sec-desc">
+                Sales intelligence tool that extracts sentiment, key themes, and trend signals from pasted customer
+                reviews or sales notes, with a local browser-side analyzer and optional Claude API support.
+              </p>
+              <div class="sec-tags">
+                <span>React</span><span>Chart.js</span><span>NLP</span>
+              </div>
+            </div>
+
+            <!-- Sec 4: 5th Sem Project -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4>5th Sem Project — Pre-Order &amp; Queue-Free Restaurant App</h4>
+                <a href="https://github.com/madhanmatthew/5th_sem_project" target="_blank" rel="noopener"
+                  class="sec-link">GitHub ↗</a>
+              </div>
+              <p class="sec-desc">
+                Full-stack ordering system built for a real cafe: React Native customer app with live order tracking,
+                React admin dashboard, Node.js backend with WebSocket-based real-time status updates.
+              </p>
+              <div class="sec-tags">
+                <span>React Native</span><span>React</span><span>Node.js</span><span>WebSockets</span>
+              </div>
+            </div>
+
+            <!-- Sec 5: TalentPool -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4>TalentPool</h4>
+              </div>
+              <p class="sec-desc">
+                Real-time job market analytics platform aggregating and visualising high-volume recruitment data, with
+                dashboards for salary trends, hiring velocity, and role distribution. PostgreSQL backend optimized for
+                10,000+ records with a caching layer.
+              </p>
+              <div class="sec-tags">
+                <span>Python</span><span>Flask</span><span>Streamlit</span><span>PostgreSQL</span><span>Pandas</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-inner">
+        <span class="section-tag">Background</span>
+        <h2 class="section-heading">Education</h2>
+        <div class="edu-list">
+
+          <div class="edu-item active-edu">
+            <div class="edu-left">
+              <span class="edu-year">2023 – 2027</span>
+              <span class="edu-badge">Pursuing</span>
+            </div>
+            <div class="edu-right">
+              <h3>B.E. Artificial Intelligence &amp; Machine Learning</h3>
+              <p>CMR Institute of Technology, Bengaluru</p>
+              <strong class="edu-grade">CGPA 8.53</strong>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-left">
+              <span class="edu-year">2021 – 2023</span>
+            </div>
+            <div class="edu-right">
+              <h3>Pre-University Course — PCMB</h3>
+              <p>Christ Global Composite PU College, Bengaluru</p>
+              <strong class="edu-grade">93.5%</strong>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-left">
+              <span class="edu-year">2021</span>
+            </div>
+            <div class="edu-right">
+              <h3>10th Grade</h3>
+              <p>New Baldwin International School, Bengaluru</p>
+              <strong class="edu-grade">86.3%</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & JOB SIMULATIONS -->
+    <section id="certifications" class="section">
+      <div class="section-inner">
+
+        <!-- SECTION 1: Certifications & Credentials -->
+        <div class="cert-block">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-heading">Certifications &amp;<br />Credentials</h2>
+          <div class="cert-grid">
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">Udemy · 2025</span>
+                <span class="cert-icon">◻</span>
+              </div>
+              <h4>UI/UX Design Fundamentals</h4>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">Oracle University · 2025</span>
+                <span class="cert-icon">◻</span>
+              </div>
+              <h4>Oracle Cloud Infrastructure 2025 — AI Foundations Associate</h4>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">Udemy · 2025</span>
+                <span class="cert-icon">◻</span>
+              </div>
+              <h4>The Complete Full Stack Web Development</h4>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 2: Industry Job Simulations -->
+        <div class="sim-block">
+          <span class="section-tag">Practical Experience</span>
+          <h3 class="sim-heading">Industry Job Simulations</h3>
+
+          <div class="sim-list">
+
+            <!-- Deloitte Australia -->
+            <div class="sim-card">
+              <div class="sim-top">
+                <div class="sim-provider-info">
+                  <span class="sim-provider">Forage · Deloitte Australia</span>
+                  <span class="sim-date">August 6, 2025</span>
+                </div>
+                <span class="sim-badge">Completed</span>
+              </div>
+              <h4 class="sim-title">Deloitte Australia Data Analytics Job Simulation</h4>
+              <ul class="sim-bullets">
+                <li>Completed a Deloitte job simulation involving data analysis and forensic technology.</li>
+                <li>Created a data dashboard using Tableau.</li>
+                <li>Used Excel to classify data and draw business conclusions.</li>
+              </ul>
+            </div>
+
+            <!-- Tata Group -->
+            <div class="sim-card">
+              <div class="sim-top">
+                <div class="sim-provider-info">
+                  <span class="sim-provider">Forage · Tata Group</span>
+                  <span class="sim-date">August 1, 2025</span>
+                </div>
+                <span class="sim-badge">Completed</span>
+              </div>
+              <h4 class="sim-title">Tata Group Data Analytics Job Simulation</h4>
+              <ul class="sim-bullets">
+                <li>Completed a job simulation involving AI-powered data analytics and strategy development for the
+                  Financial Services team at Tata iQ.</li>
+                <li>Conducted exploratory data analysis (EDA) using GenAI tools to assess data quality, identify risk
+                  indicators, and structure insights for predictive modeling.</li>
+                <li>Proposed and justified an initial no-code predictive modeling framework to assess customer
+                  delinquency risk, leveraging GenAI for structured model logic and evaluation criteria.</li>
+                <li>Designed an AI-driven collections strategy leveraging agentic AI and automation, incorporating
+                  ethical AI principles, regulatory compliance, and scalable implementation frameworks.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="section">
+      <div class="section-inner">
+        <span class="section-tag">More</span>
+        <h2 class="section-heading">Activities</h2>
+
+        <div class="act-grid">
+
+          <!-- SUB-SECTION 1: HACKATHONS & EVENTS -->
+          <div class="act-col">
+            <h3 class="act-col-title">Hackathons &amp; Events</h3>
+            <ul class="hack-list">
+              <li class="hack-win">
+                <span class="hy">2025</span>
+                <span>Runner-up · Tovard's Club Hackathon, CMRIT</span>
+              </li>
+              <li><span class="hy">2025</span><span>Odoo × NMIT Hackathon</span></li>
+              <li><span class="hy">2025</span><span>GenAI for Police — TrendyTech</span></li>
+              <li><span class="hy">2025</span><span>MEMbrain Hackathon, CMRIT</span></li>
+              <li>
+                <span class="hy">2026</span>
+                <span>AgentX Hackathon</span>
+              </li>
+              <li>
+                <span class="hy">2025</span>
+                <span>InnovateX Hackfest</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SUB-SECTION 2: CO-CURRICULAR -->
+          <div class="act-col">
+            <h3 class="act-col-title">Co-Curricular</h3>
+
+            <div class="scr-card">
+              <h4>Social Connect and Responsibilities (SCR)</h4>
+              <p>
+                A VTU-prescribed community engagement course completed under CMRIT's AIML department — covered tree
+                plantation, a heritage walk to Bengaluru Fort, organic farming and waste management, water conservation,
+                and a community food-donation drive.
+              </p>
+            </div>
+
+            <span class="act-sub-label">NSS Events</span>
+            <ul class="hack-list">
+              <li><span class="hy">2026</span><span>Swachh Bharat Abhiyan — neighbourhood cleaning drive</span></li>
+              <li><span class="hy">2026</span><span>Cleanliness Drive, CMRIT</span></li>
+              <li><span class="hy">2026</span><span>Women Empowerment event</span></li>
+              <li><span class="hy">2025</span><span>71st Wildlife Week Walkathon</span></li>
+            </ul>
+          </div>
+
+          <!-- SUB-SECTION 3: HOBBIES -->
+          <div class="act-col">
+            <h3 class="act-col-title">Hobbies</h3>
+            <div class="extra-list">
+              <div class="extra-item">
+                <h4>Cricket &amp; Badminton</h4>
+                <p>Regular player</p>
+              </div>
+              <div class="extra-item">
+                <h4>Video &amp; Photo Editing</h4>
+                <p>Creative visual editing &amp; composition</p>
+              </div>
+              <div class="extra-item">
+                <h4>Sketching</h4>
+                <p>Pencil portraits and concept art</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-last">
+      <div class="section-inner">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="contact-heading">Let's build<br />something <em>great.</em></h2>
+        <p class="contact-sub">Open to AI/ML and Software Engineering internships. I reply within a day.</p>
+
+        <div class="contact-grid">
+          <div class="contact-col">
+            <h3 class="contact-col-label">Direct</h3>
+            <a href="mailto:madhan4530@gmail.com" class="contact-row" id="c-email">
+              <span class="cr-label">Personal mail</span>
+              <span class="cr-val">madhan4530@gmail.com</span>
+            </a>
+            <a href="mailto:mama23aiml@cmrit.ac.in" class="contact-row" id="c-cmrit">
+              <span class="cr-label">College mail</span>
+              <span class="cr-val">mama23aiml@cmrit.ac.in</span>
+            </a>
+            <a href="tel:+917899643760" class="contact-row" id="c-phone">
+              <span class="cr-label">Phone</span>
+              <span class="cr-val">+91 78996 43760</span>
+            </a>
+          </div>
+          <div class="contact-col">
+            <h3 class="contact-col-label">Online</h3>
+            <a href="https://www.linkedin.com/in/madhan-matthew-s-88a73b375/" target="_blank" rel="noopener"
+              class="contact-row" id="c-li">
+              <span class="cr-label">LinkedIn</span>
+              <span class="cr-val">madhan-matthew-s ↗</span>
+            </a>
+            <a href="https://github.com/madhanmatthew" target="_blank" rel="noopener" class="contact-row" id="c-gh">
+              <span class="cr-label">GitHub</span>
+              <span class="cr-val">madhanmatthew ↗</span>
+            </a>
+            <a href="https://leetcode.com/u/Madhan_Matthew_S/" target="_blank" rel="noopener" class="contact-row"
+              id="c-lc">
+              <span class="cr-label">LeetCode</span>
+              <span class="cr-val">Madhan_Matthew_S ↗</span>
+            </a>
+            <a href="6th sem.pdf" target="_blank" rel="noopener" class="contact-row contact-resume" id="c-res">
+              <span class="cr-label">Resume</span>
+              <span class="cr-val">View / Download PDF ↓</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="contact-location">#7 Ebenezer Cottage, Vijinapura, Bengaluru 560016</p>
+      </div>
+
+      <footer class="site-footer">
+        <span>© 2025 Madhan Matthew S</span>
+        <span>Built from scratch.</span>
+        <span>Bengaluru</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
