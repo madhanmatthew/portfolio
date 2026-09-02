@@ -475,47 +475,39 @@ em {
 
 /* ── HERO BIO — ANIMATED STATEMENT LINES ───────── */
 
-/* Word pop: all 4 phrases appear together, stay, then all disappear together — loops */
-@keyframes wordPop {
+/* Word pop sequence: phrase by phrase from left to right, looping */
+@keyframes phrasePopSequence {
   0% {
     opacity: 0;
-    transform: scale(0.55) translateY(14px);
+    transform: scale(0.6) translateY(10px);
   }
 
-  18% {
+  14% {
     opacity: 1;
-    transform: scale(1.18) translateY(-3px);
+    transform: scale(1.16) translateY(-2px);
   }
 
-  30% {
-    transform: scale(0.97) translateY(0px);
-  }
-
-  40% {
+  24% {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
 
-  72% {
+  78% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 
-  88% {
-    opacity: 0;
-    transform: scale(0.85) translateY(-6px);
-  }
-
+  90%,
   100% {
     opacity: 0;
-    transform: scale(0.85) translateY(-6px);
+    transform: scale(0.88) translateY(-4px);
   }
 }
 
-/* Slide line 2: slow left-to-right, readable loop (8s) */
-@keyframes slideTextLoop {
+/* Line 2 fade-in from left to right via clip-path wipe (no physical text sliding) */
+@keyframes fadeWipeLeftToRight {
   0% {
-    transform: translateX(-105%);
+    clip-path: inset(0 100% 0 0);
     opacity: 0;
   }
 
@@ -523,21 +515,19 @@ em {
     opacity: 1;
   }
 
-  70% {
-    transform: translateX(0);
+  50% {
+    clip-path: inset(0 0% 0 0);
     opacity: 1;
   }
 
-  88% {
+  80% {
+    clip-path: inset(0 0% 0 0);
     opacity: 1;
   }
 
-  96% {
-    opacity: 0;
-  }
-
+  94%,
   100% {
-    transform: translateX(30px);
+    clip-path: inset(0 0% 0 0);
     opacity: 0;
   }
 }
@@ -650,29 +640,40 @@ em {
   font-weight: 700;
   color: var(--text);
   opacity: 0;
-  /* All 4 phrases share SAME delay — appear & disappear together */
-  animation: wordPop 4.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s infinite both;
+  animation: phrasePopSequence 5.2s cubic-bezier(0.22, 1, 0.36, 1) infinite both;
 }
 
-/* 4th phrase: "I rebuild better." slightly bigger for emphasis */
+.wp:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.wp:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.wp:nth-child(3) {
+  animation-delay: 1.3s;
+}
+
 .wp:nth-child(4) {
+  animation-delay: 1.9s;
   color: var(--purple);
   font-size: 1.12rem;
 }
 
-/* SLIDE LINE 2 */
-.slide-line {
+/* FADE LINE 2 */
+.fade-line-wrap {
   overflow: hidden;
   width: 100%;
 }
 
-.slide-text {
+.fade-line-text {
   display: inline-block;
   font-size: 0.93rem;
   font-weight: 500;
   color: var(--muted);
   white-space: nowrap;
-  animation: slideTextLoop 8s ease-in-out 1.2s infinite both;
+  animation: fadeWipeLeftToRight 6.5s ease-in-out 0.8s infinite both;
 }
 
 /* Pill badges */
