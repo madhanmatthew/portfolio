@@ -475,60 +475,69 @@ em {
 
 /* ── HERO BIO — ANIMATED STATEMENT LINES ───────── */
 
-/* Word pop: each word bounces in bold, loops forever */
+/* Word pop: all 4 phrases appear together, stay, then all disappear together — loops */
 @keyframes wordPop {
   0% {
     opacity: 0;
-    transform: scale(0.5) translateY(12px);
+    transform: scale(0.55) translateY(14px);
   }
 
-  22% {
+  18% {
     opacity: 1;
-    transform: scale(1.22) translateY(-4px);
+    transform: scale(1.18) translateY(-3px);
+  }
+
+  30% {
+    transform: scale(0.97) translateY(0px);
   }
 
   40% {
-    transform: scale(0.95) translateY(1px);
-  }
-
-  58% {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
 
-  84% {
+  72% {
     opacity: 1;
     transform: scale(1);
   }
 
+  88% {
+    opacity: 0;
+    transform: scale(0.85) translateY(-6px);
+  }
+
   100% {
     opacity: 0;
-    transform: scale(0.8) translateY(-8px);
+    transform: scale(0.85) translateY(-6px);
   }
 }
 
-/* Slide line 2 left to right, loops */
+/* Slide line 2: slow left-to-right, readable loop (8s) */
 @keyframes slideTextLoop {
   0% {
-    transform: translateX(-110%);
+    transform: translateX(-105%);
     opacity: 0;
   }
 
-  14% {
+  10% {
     opacity: 1;
   }
 
-  78% {
+  70% {
     transform: translateX(0);
     opacity: 1;
   }
 
-  94% {
+  88% {
+    opacity: 1;
+  }
+
+  96% {
     opacity: 0;
   }
 
   100% {
-    transform: translateX(50px);
+    transform: translateX(30px);
     opacity: 0;
   }
 }
@@ -637,52 +646,18 @@ em {
 .wp {
   display: inline-block;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.06rem;
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--text);
   opacity: 0;
-  animation: wordPop 3.6s cubic-bezier(0.22, 1, 0.36, 1) infinite both;
+  /* All 4 phrases share SAME delay — appear & disappear together */
+  animation: wordPop 4.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s infinite both;
 }
 
-.wp:nth-child(1) {
-  animation-delay: 0.05s;
-}
-
-.wp:nth-child(2) {
-  animation-delay: 0.38s;
-  color: var(--purple);
-}
-
-.wp:nth-child(3) {
-  animation-delay: 0.71s;
-}
-
+/* 4th phrase: "I rebuild better." slightly bigger for emphasis */
 .wp:nth-child(4) {
-  animation-delay: 1.04s;
   color: var(--purple);
-}
-
-.wp:nth-child(5) {
-  animation-delay: 1.37s;
-}
-
-.wp:nth-child(6) {
-  animation-delay: 1.70s;
-  color: var(--purple);
-}
-
-.wp:nth-child(7) {
-  animation-delay: 2.03s;
-}
-
-.wp:nth-child(8) {
-  animation-delay: 2.36s;
-  color: var(--purple);
-}
-
-.wp:nth-child(9) {
-  animation-delay: 2.69s;
-  color: var(--purple);
+  font-size: 1.12rem;
 }
 
 /* SLIDE LINE 2 */
@@ -697,7 +672,7 @@ em {
   font-weight: 500;
   color: var(--muted);
   white-space: nowrap;
-  animation: slideTextLoop 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite both;
+  animation: slideTextLoop 8s ease-in-out 1.2s infinite both;
 }
 
 /* Pill badges */
