@@ -474,52 +474,85 @@ em {
 }
 
 .hero-bio {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 36px;
-  padding-left: 18px;
-  border-left: 3px solid var(--purple);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  max-width: 580px;
+  box-shadow: 0 4px 20px rgba(147, 51, 234, 0.04);
+  transition: border-color var(--ui), box-shadow var(--ui);
+}
+
+.hero-bio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #9333EA 0%, #C084FC 60%, rgba(147, 51, 234, 0.15) 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-bio:hover {
+  border-color: var(--p-line);
+  box-shadow: 0 6px 24px rgba(147, 51, 234, 0.08);
 }
 
 .hero-bio-line {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 0;
 }
 
-.hero-bio-highlight {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--purple);
-  letter-spacing: 0.04em;
-  margin-top: 4px;
+.hero-bio-pills {
   display: flex;
-  align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  margin: 4px 0;
 }
 
-.hero-bio-highlight span {
+.bio-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--purple);
   background: var(--p-dim);
   border: 1px solid var(--p-line);
-  padding: 3px 10px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.bio-pill:hover {
+  transform: translateY(-1px);
+  background: rgba(147, 51, 234, 0.12);
 }
 
 .hero-bio-tagline {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--text);
-  margin-top: 6px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   letter-spacing: -0.01em;
+}
+
+.tagline-icon {
+  color: var(--purple);
+  font-size: 0.9rem;
 }
 
 .hero-actions {
