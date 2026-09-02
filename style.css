@@ -473,86 +473,120 @@ em {
   margin-bottom: 24px;
 }
 
+/* ── HERO BIO STATEMENT ROWS ───────────────────── */
 .hero-bio {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 22px 26px;
-  position: relative;
-  overflow: hidden;
   margin-bottom: 36px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 580px;
-  box-shadow: 0 4px 20px rgba(147, 51, 234, 0.04);
-  transition: border-color var(--ui), box-shadow var(--ui);
+  gap: 0;
+  max-width: 560px;
 }
 
-.hero-bio::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, #9333EA 0%, #C084FC 60%, rgba(147, 51, 234, 0.15) 100%);
-  border-radius: 4px 0 0 4px;
+/* Shared row base */
+.bio-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
 }
 
-.hero-bio:hover {
-  border-color: var(--p-line);
-  box-shadow: 0 6px 24px rgba(147, 51, 234, 0.08);
+.bio-row:hover {
+  background: rgba(147, 51, 234, 0.04);
 }
 
-.hero-bio-line {
-  font-size: 0.95rem;
+/* Numbered line counter */
+.bio-num {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--purple);
+  opacity: 0.5;
+  min-width: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Statement text */
+.bio-text {
+  font-size: 0.97rem;
   font-weight: 500;
   color: var(--muted);
   line-height: 1.5;
-  margin: 0;
 }
 
-.hero-bio-pills {
-  display: flex;
+/* Row 1 — bold opening statement */
+.bio-row--1 .bio-text {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Row 2 — slightly lighter */
+.bio-row--2 .bio-text {
+  font-size: 0.93rem;
+}
+
+/* Row 3 — pill badges row */
+.bio-row--3 {
   gap: 8px;
+  padding: 10px 16px;
   flex-wrap: wrap;
-  margin: 4px 0;
 }
 
 .bio-pill {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--purple);
   background: var(--p-dim);
   border: 1px solid var(--p-line);
-  padding: 4px 12px;
+  padding: 4px 13px;
   border-radius: 20px;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.18s ease, background 0.18s ease;
 }
 
 .bio-pill:hover {
-  transform: translateY(-1px);
-  background: rgba(147, 51, 234, 0.12);
+  transform: translateY(-2px);
+  background: rgba(147, 51, 234, 0.13);
 }
 
-.hero-bio-tagline {
+/* Row 4 — bold tagline */
+.bio-row--4 {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+  gap: 10px;
+}
+
+.tagline-star {
+  font-size: 0.85rem;
+  color: var(--purple);
+  animation: starPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes starPulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+}
+
+.bio-tagline-text {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.07rem;
   font-weight: 800;
   color: var(--text);
-  margin-top: 2px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
   letter-spacing: -0.01em;
-}
-
-.tagline-icon {
-  color: var(--purple);
-  font-size: 0.9rem;
 }
 
 .hero-actions {
