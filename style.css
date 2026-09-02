@@ -900,6 +900,8 @@ em {
 }
 
 .cert-card {
+  display: block;
+  text-decoration: none;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -1019,6 +1021,13 @@ em {
   border: 1px solid var(--p-line);
   padding: 3px 10px;
   border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background var(--ui), border-color var(--ui);
+}
+
+.sim-badge:hover {
+  background: var(--p-line);
 }
 
 .sim-title {
@@ -1028,6 +1037,16 @@ em {
   color: var(--text);
   margin-bottom: 14px;
   line-height: 1.35;
+}
+
+.sim-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--ui);
+}
+
+.sim-title a:hover {
+  color: var(--purple);
 }
 
 .sim-bullets {
