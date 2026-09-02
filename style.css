@@ -2,7 +2,7 @@
    MADHAN MATTHEW S · PORTFOLIO · style.css
    ─────────────────────────────────────────────────────
    Layout: Fixed Sidebar + Natural Scroll Content
-   Theme:  Light Mode (Warm Ivory/White + Deep Purple Accent)
+   Theme:  Light Mode (Warm Ivory/White + Deep Maroon Accent)
 ═══════════════════════════════════════════════════════ */
 
 *,
@@ -14,16 +14,16 @@
 }
 
 :root {
-  --bg: #F4F4F8;
+  --bg: #FAF6F0;
   --surface: #FFFFFF;
-  --raised: #EBEBF3;
-  --purple: #7E22CE;
-  /* Rich deep purple for light theme contrast */
-  --p-bright: #9333EA;
-  --p-dim: rgba(126, 34, 204, 0.09);
-  --p-line: rgba(126, 34, 204, 0.25);
-  --text: #0F0F14;
-  --muted: #52525B;
+  --raised: #F0E8DC;
+  --purple: #7C1E2E;
+  /* Deep maroon accent */
+  --p-bright: #A0283C;
+  --p-dim: rgba(124, 30, 46, 0.09);
+  --p-line: rgba(124, 30, 46, 0.25);
+  --text: #0F0A08;
+  --muted: #5A4A44;
   --border: rgba(0, 0, 0, 0.08);
   --border-hi: rgba(0, 0, 0, 0.15);
   --ui: 180ms ease;
@@ -228,7 +228,7 @@ em {
 }
 
 .sb-resume:hover {
-  background: rgba(126, 34, 204, 0.18);
+  background: rgba(124, 30, 46, 0.18);
   border-color: var(--purple);
 }
 
@@ -555,7 +555,7 @@ em {
 }
 
 .bio-row:hover {
-  background: rgba(147, 51, 234, 0.04);
+  background: rgba(124, 30, 46, 0.04);
 }
 
 /* Animated underline sweep on hover */
@@ -665,8 +665,8 @@ em {
 
 .bio-pill:hover {
   transform: translateY(-3px);
-  background: rgba(147, 51, 234, 0.13);
-  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.18);
+  background: rgba(124, 30, 46, 0.13);
+  box-shadow: 0 4px 12px rgba(124, 30, 46, 0.18);
 }
 
 /* Spinning star accent */
@@ -703,7 +703,7 @@ em {
   color: #FFFFFF;
   padding: 12px 28px;
   border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(126, 34, 204, 0.3);
+  box-shadow: 0 4px 14px rgba(124, 30, 46, 0.3);
   transition: opacity var(--ui), transform var(--ui);
 }
 
@@ -1184,7 +1184,7 @@ em {
 
 .sim-card:hover {
   border-color: var(--p-line);
-  box-shadow: 0 4px 20px rgba(126, 34, 204, 0.05);
+  box-shadow: 0 4px 20px rgba(124, 30, 46, 0.05);
 }
 
 .sim-top {
@@ -1503,7 +1503,7 @@ em {
   left: 0;
   width: 6px;
   height: 6px;
-  background: #9333EA;
+  background: #A0283C;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
@@ -1518,8 +1518,8 @@ em {
   left: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid rgba(147, 51, 234, 0.35);
-  background: rgba(147, 51, 234, 0.03);
+  border: 1px solid rgba(124, 30, 46, 0.35);
+  background: rgba(124, 30, 46, 0.03);
   border-radius: 50%;
   pointer-events: none;
   z-index: 99998;
@@ -1537,8 +1537,8 @@ em {
 #cursor-ring.hovered {
   width: 44px;
   height: 44px;
-  border-color: rgba(147, 51, 234, 0.55);
-  background: rgba(147, 51, 234, 0.07);
+  border-color: rgba(124, 30, 46, 0.55);
+  background: rgba(124, 30, 46, 0.07);
 }
 
 /* Subtle Cursor Dust Trail */
